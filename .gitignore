@@ -1,0 +1,4 @@
+.config/st/patches/
+.config/st/.gitignore
+.config/st/*.o
+.config/st/st
