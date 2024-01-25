@@ -6,8 +6,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "JetBrains Mono:pixelsize=19:antialias=true:autohint=true";
-static char *font2[] = { "JetBrains Mono:pixelsize=15:antialias=true:autohint=true" };
-static int borderpx = 0;
+static char *font2[] = { "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
+static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -134,7 +134,6 @@ static const char *colorname[] = {
 	"#add8e6", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
 	"#121418", /* 258 -> bg */
-	/* "#212121", /* 258 -> bg */
 	"#abb2bf", /* 259 -> fg */
 };
 
@@ -246,7 +245,6 @@ static MouseShortcut mshortcuts[] = {
 static char *openurlcmd[] = { "/bin/sh", "-c", "st-urlhandler -o", "externalpipe", NULL };
 static char *copyurlcmd[] = { "/bin/sh", "-c", "st-urlhandler -c", "externalpipe", NULL };
 static char *copyoutput[] = { "/bin/sh", "-c", "st-copyout", "externalpipe", NULL };
-
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
@@ -556,3 +554,4 @@ static char ascii_printable[] =
 	" !\"#$%&'()*+,-./0123456789:;<=>?"
 	"@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_"
 	"`abcdefghijklmnopqrstuvwxyz{|}~";
+
